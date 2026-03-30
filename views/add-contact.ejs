@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/addContact.css">
+<%- include('partials/navbar') %>
+
+<div class="contact-card">
+    <h2>Add Contact</h2>
+    <form id="contactForm" action="/saveContact" method="POST">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="e.g., Jane" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="e.g., Doe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane.doe@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+        </div>
+
+        <button type="submit">Save Contact</button>
+    </form>
+    <div id="successMsg" class="success-msg">Contact saved successfully!</div>
+</div>
+
+<%- include('partials/footer') %>

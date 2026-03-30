@@ -1,0 +1,98 @@
+.home-panel {
+  width: 100%;
+  max-width: 1000px;
+  padding: 32px;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.home-title {
+  margin: 0;
+  color: var(--text-main);
+}
+
+.btn-add {
+  color: var(--text-main);
+  border-color: rgba(255, 255, 255, 0.38);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  text-align: left;
+}
+
+.contact-table th {
+  padding: 0 16px 12px;
+  color: var(--text-main);
+  text-shadow: 0 1px 3px rgba(15, 23, 42, 0.25);
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+  letter-spacing: 1px;
+}
+
+.contact-table th.center {
+  text-align: center;
+}
+
+.row-extruded {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  transition: all var(--transition-fast);
+}
+
+.row-inset {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transition: all var(--transition-fast);
+}
+
+.row-extruded:hover, .row-inset:hover {
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 14px 24px rgba(15, 23, 42, 0.25);
+}
+
+.contact-table td {
+  padding: 20px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(14px) saturate(125%);
+  backdrop-filter: blur(14px) saturate(125%);
+}
+
+.contact-table td:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.contact-table td:last-child {
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.action-icons {
+  gap: 12px;
+}
+
+.btn-icon {
+  min-height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid currentColor;
+  background: rgba(255, 255, 255, 0.12);
+}

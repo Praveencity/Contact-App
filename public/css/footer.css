@@ -1,0 +1,20 @@
+footer {
+  margin-top: auto;
+  padding: 8px 16px 28px;
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+footer p {
+  width: min(92%, 1100px);
+  margin: 0 auto;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--depth-shadow), var(--inset-shadow);
+  text-shadow: 0 1px 3px rgba(15, 23, 42, 0.3);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  backdrop-filter: blur(16px) saturate(120%);
+}
