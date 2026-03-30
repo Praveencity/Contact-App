@@ -32,9 +32,9 @@
                 <td class="text-soft"><%= contact.phone %></td>
                 <td>
                   <div class="actions action-icons">
-                      <a href="/contacts/<%= contact._id %>" class="btn btn-icon" style="color: teal;" title="View">👁</a>
-                      <a href="/contacts/<%= contact._id %>/edit" class="btn btn-icon" style="color: #007bff;" title="Edit">✎</a>
-                      <button class="btn btn-icon" style="color: #dc3545;" title="Delete">✕</button>
+                      <a href="/contact/<%= contact._id %>" class="btn btn-icon" style="color: teal;" title="View">👁</a>
+                      <a href="/contact/update/<%= contact._id %>" class="btn btn-icon" style="color: #007bff;" title="Edit">✎</a>
+                      <a href="/contact/delete/<%= contact._id %>" class="btn btn-icon" style="color: #dc3545;" title="Delete">✕</a>
                   </div>
                 </td>
             </tr>

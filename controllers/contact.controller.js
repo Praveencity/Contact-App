@@ -14,3 +14,23 @@ export const saveContact = async (req,res)=>{
         res.redirect('/');
 }
 
+export const viewContact = async (req,res)=>{
+        let data = await Contact.findById(req.params.userID);
+        res.render('show-contact',{user : data});
+}
+
+export const updateContactPage = async (req,res)=>{
+        let data = await Contact.findById(req.params.userID);
+        res.render('update-contact',{user : data});
+}
+
+export const deleteContact = async (req,res)=>{
+        await Contact.findByIdAndDelete(req.params.userID);
+        res.redirect('/');
+}
+
+export const updateContact = async (req,res)=>{
+        await Contact.findByIdAndUpdate(req.params.userID,req.body);
+        res.redirect(`/contact/${req.params.userID}`);
+}
+
